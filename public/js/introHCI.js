@@ -34,10 +34,8 @@ function addProjectDetails(e) {
 function addProject(result) {
 	console.log(result);
 	var idNumber = result['id'];
-	var projectHTML = '<img src="' + result['image'] + '" class="detailsImage">' +
-	 '<p>' + result['summary'] + '</p>' + 
-	 '<p><small>' + result['date'] + '</small></p>';
-	$("#project" + idNumber + " .details").html(projectHTML);
+	var projectHTML = result['summary'];
+	$("#project" + 1 + " .details").html(projectHTML);
 }
 
 
